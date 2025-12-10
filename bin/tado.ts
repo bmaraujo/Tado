@@ -3,6 +3,12 @@ import * as cdk from 'aws-cdk-lib/core';
 import { TadoStack } from '../lib/tado-stack';
 
 const app = new cdk.App();
+
+const env: cdk.Environment = {
+  account:"627010764306",
+  region:"us-east-1"
+}
+
 new TadoStack(app, 'TadoStack', {
   /* If you don't specify 'env', this stack will be environment-agnostic.
    * Account/Region-dependent features and context lookups will not work,

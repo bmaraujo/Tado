@@ -1,0 +1,1 @@
+export const TADO_SUFFIX = 'Tado';
